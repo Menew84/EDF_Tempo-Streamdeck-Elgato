@@ -10,7 +10,7 @@ Plugin Stream Deck + helper local (localhost) pour afficher l’option **EDF Tem
 - `plugin/src/` : sources complètes du plugin Stream Deck (JS/HTML/manifest/assets)
 - `helper/src/` : sources complètes du helper Python (API locale)
 
-Les binaires prêts à installer sont fournis dans `releases/v1.0.0/` (et recommandés pour tes amis).
+Les binaires prêts à installer sont fournis dans `releases/v1.0.0/`.
 
 ## 🚀 Installation rapide (recommandée)
 1. Va dans `releases/v1.0.0/`
