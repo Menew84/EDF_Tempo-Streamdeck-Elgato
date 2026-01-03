@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/><title>EDF Tempo - Options</title>
+<style>
+body{font-family:Arial,sans-serif;margin:12px;}
+label{display:block;margin:8px 0 4px;font-weight:600;}
+select{width:100%;padding:6px;}
+.cb{display:flex;align-items:center;gap:8px;margin:8px 0;}
+.cb input{width:auto;}
+.btn{width:100%;padding:10px;border:0;border-radius:8px;background:#2d7dff;color:#fff;font-weight:700;cursor:pointer;margin-top:10px;}
+.badge{margin-top:8px;font-size:12px;color:#2b8a3e;display:none;}
+.note{font-size:12px;color:#666;line-height:1.35;margin-top:8px;}
+</style></head><body>
+<label>Langue</label>
+<select id="lang"><option value="fr">Français</option><option value="en">English</option></select>
+
+<label>Format date</label>
+<select id="dateFormat"><option value="ddmmyy">JJ/MM/AA</option><option value="mmddyy">MM/DD/YY</option></select>
+
+<label>Mode timer</label>
+<select id="timerMode"><option value="endOfDay">Fin de journée (aujourd'hui)</option><option value="endOfTargetDay">Fin du jour affiché</option></select>
+
+<div class="cb"><input id="showLabel" type="checkbox"/><label for="showLabel" style="margin:0;">Texte (AUJ/DEMAIN/HIER)</label></div>
+<div class="cb"><input id="showDate" type="checkbox"/><label for="showDate" style="margin:0;">Date</label></div>
+<div class="cb"><input id="showColorText" type="checkbox"/><label for="showColorText" style="margin:0;">Nom couleur</label></div>
+<div class="cb"><input id="showTimer" type="checkbox"/><label for="showTimer" style="margin:0;">Timer</label></div>
+
+<button id="apply" class="btn">Appliquer</button>
+<div id="badge" class="badge">Envoyé ✓</div>
+
+<div class="note">Astuce: appuie sur la touche pour forcer un refresh.</div>
+
+<script src="pi.js"></script>
+</body></html>

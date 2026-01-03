@@ -1,0 +1,119 @@
+{
+  "$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+  "Name": "EDF Tempo (Local Helper) v2",
+  "Description": "Jour/HIER/Demain + Stats (jours restants/consommés) via helper local.",
+  "Author": "My New IT",
+  "Category": "EDF Tempo",
+  "CategoryIcon": "assets/category-icon",
+  "Icon": "assets/plugin-icon",
+  "UUID": "com.mynewit.edf-tempo.local.v2",
+  "Version": "1.2.7.0",
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "6.6"
+  },
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    },
+    {
+      "Platform": "mac",
+      "MinimumVersion": "13"
+    }
+  ],
+  "CodePath": "plugin.html",
+  "PropertyInspectorPath": "pi.html",
+  "Actions": [
+    {
+      "Name": "Tempo – Aujourd'hui (Local)",
+      "UUID": "com.mynewit.edf-tempo.local.v2.today",
+      "Icon": "assets/today-icon",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "assets/state"
+        }
+      ],
+      "DisableAutomaticStates": true,
+      "PropertyInspectorPath": "pi.html"
+    },
+    {
+      "Name": "Tempo – Demain (Local)",
+      "UUID": "com.mynewit.edf-tempo.local.v2.tomorrow",
+      "Icon": "assets/tomorrow-icon",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "assets/state"
+        }
+      ],
+      "DisableAutomaticStates": true,
+      "PropertyInspectorPath": "pi.html"
+    },
+    {
+      "Name": "Tempo – Hier (Local)",
+      "UUID": "com.mynewit.edf-tempo.local.v2.yesterday",
+      "Icon": "assets/yesterday-icon",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "assets/state"
+        }
+      ],
+      "DisableAutomaticStates": true,
+      "PropertyInspectorPath": "pi.html"
+    },
+    {
+      "Name": "Stats – Jours BLEUS (Local)",
+      "UUID": "com.mynewit.edf-tempo.local.v2.stats.blue",
+      "Icon": "assets/blue-stat-icon",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "assets/state"
+        }
+      ],
+      "DisableAutomaticStates": true,
+      "PropertyInspectorPath": "pi_stats.html"
+    },
+    {
+      "Name": "Stats – Jours BLANCS (Local)",
+      "UUID": "com.mynewit.edf-tempo.local.v2.stats.white",
+      "Icon": "assets/white-stat-icon",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "assets/state"
+        }
+      ],
+      "DisableAutomaticStates": true,
+      "PropertyInspectorPath": "pi_stats.html"
+    },
+    {
+      "Name": "Stats – Jours ROUGES (Local)",
+      "UUID": "com.mynewit.edf-tempo.local.v2.stats.red",
+      "Icon": "assets/red-stat-icon",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "assets/state"
+        }
+      ],
+      "DisableAutomaticStates": true,
+      "PropertyInspectorPath": "pi_stats.html"
+    }
+  ]
+}
